@@ -60,3 +60,7 @@ services:
       - STRIPE_DEVICE_NAME=djstripe_docker
 
 ```
+
+!!! note
+
+    stripe expects the `WEBHOOK ENDPOINT SIGNING SECRET (whsec_...)` to be match what is outputted by the `stripe CLI`.
