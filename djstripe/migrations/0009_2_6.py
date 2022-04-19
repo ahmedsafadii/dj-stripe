@@ -83,7 +83,7 @@ class Migration(migrations.Migration):
                 (
                     "url",
                     models.URLField(
-                        help_text="The URL of the webhook endpoint.", max_length=2048
+                        help_text="The URL of the webhook endpoint.", max_length=2000
                     ),
                 ),
                 (
