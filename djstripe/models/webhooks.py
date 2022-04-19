@@ -47,7 +47,7 @@ class WebhookEndpoint(StripeModel):
         enum=WebhookEndpointStatus,
         help_text="The status of the webhook. It can be enabled or disabled.",
     )
-    url = models.URLField(help_text="The URL of the webhook endpoint.", max_length=2048)
+    url = models.URLField(help_text="The URL of the webhook endpoint.", max_length=2000)
     application = models.CharField(
         max_length=255,
         blank=True,
